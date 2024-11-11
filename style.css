@@ -1,0 +1,434 @@
+body{
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 auto;
+}
+.header{
+    margin: 0 auto;
+    display: flex;
+
+}
+.header-logo{
+    margin: auto 0;
+    margin-left: 72px;
+}
+.logo{
+    border-radius: 50%;
+}
+.navigation{
+    margin-left: auto;
+
+}
+.navigation-list{
+    padding: 0;
+    margin: 0;
+    margin-right: 72px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.list-item{
+    padding: 34px 24px;
+    transition: all 1s;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    transition: all 0.8s;
+    font-size: 16px;
+    line-height: 24px;
+}
+.active{
+    border: 2px solid rgba(82, 33, 230, 1);
+    border-radius: 20%;
+}
+.hero{
+    display: flex;
+    padding: 120px 72px;
+    background-image: url("./img/hero_2.jpg");
+    background-size: cover;
+    margin: 0 auto;
+
+}
+.hero-content{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.hero-title{
+    font-size: 38px;
+    line-height: 40px;
+}
+.hero-description{
+    font-size: 18px;
+    line-height: 27px;
+}
+.heroContainerImg{
+    margin-right: auto;
+}
+.heroImg{
+    max-width: 300px;
+    border-radius: 50%;
+    border: thick double white;
+}
+.workExpContent{
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+.workExp{
+    border-top: 2px dashed;
+    padding: 120px 72px;
+}
+.workExpDescription{
+    color:rgba(132, 145, 160, 1);
+    font-size: 16px;
+}
+.workExpTitle{
+    font-size: 55px;
+    line-height: 66.17px;
+    margin: 0;
+
+}
+.workExpCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card-title{
+    font-size: 117px;
+    line-height: 140.77px;
+    margin: 0;
+    color: rgba(132, 145, 160, 1);
+}
+.card-exp{
+    font-size: 24px;
+    line-height: 36px;
+}
+.span-green{
+    color: green;
+}
+.span-red{
+    color: red;
+}
+.span-yellow{
+    color: yellow;
+}
+.card-desctiption{
+    color:rgb(138, 138, 95);
+    font-size: 16px;
+}
+.frame10{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.frame10Content{
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1rem, 0.667rem + 11.11vw, 1.5rem) clamp(1rem, 0.808rem + 15.38vw, 1.5rem);
+    color: black;
+    background-color: bisque;
+
+}
+.frame10ImgContent{
+    width: 100%;
+
+}
+.frame10Title{
+    font-size: 55px;
+    line-height: 66.17px;
+}
+.frame10Description{
+    color: rgba(91, 104, 118, 1);
+    line-height: 27px;
+
+}
+.frame10Link{
+    margin-top: auto;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid;
+    width: max-content;
+    font-size: 16px;
+}
+.frame10Img{
+    height: 100%;
+    width: 100%;
+}
+.skill{
+    display: grid;
+    padding: 120px 72px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.skillBox-1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.skillTitleOne{
+    font-size: 55px;
+    line-height: 66.17px;
+}
+.skillTitle{
+    font-size: 24px;
+    line-height: 36px;
+}
+.skillDescriptionOne{
+    line-height: 27px;
+    color: rgba(132, 145, 160, 1);
+}
+.skillDescription{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(132, 145, 160, 1);
+}
+
+.frame27{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.frame27Logo{
+    padding: 60px 0;
+    text-align: center;
+    border: 1px solid rgba(24, 24, 35, 1);
+    margin: 0;
+}
+
+.contactInst{
+    background-color: rgba(251, 228, 255, 1);
+}
+.frame32{
+    padding: 0 72px;
+}
+.dribble{
+    max-width: 650px;
+    margin-bottom: 120px;
+}
+.dribbleTitle{
+    font-size: 55px;
+    line-height: 66.17px;
+    color: rgba(255, 255, 255, 1);
+}
+.dribbleDescription{
+    color: rgba(132, 145, 160, 1);
+    line-height: 27px;
+}
+.dribbleLink{
+    margin-top: auto;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid;
+    width: max-content;
+    font-size: 16px;
+}
+.dribbleImg{
+    height: 100%;
+    width: 100%;
+}
+.frame36{
+    padding: 0 70px;
+    gap: 24px;
+}
+.aboutMe{
+    margin-bottom: 20px;
+}
+.aboutMeTitle{
+    font-size: 55px;
+    line-height: 66.17px;
+    color: rgba(255, 255, 255, 1);
+}
+.aboutMeDescription{
+    color: rgba(132, 145, 160, 1);
+    line-height: 27px;
+}
+.aboutMeLink{
+    margin-top: auto;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid;
+    width: max-content;
+    font-size: 16px;
+}
+.aboutCard{
+
+    border: 1px solid rgba(91, 104, 118, 1);
+}
+.aboutDescription{
+    margin-left: 30px;
+}
+.aboutAthor{
+    margin-left: 30px;
+}
+.aboutImg{
+    width: 100%;
+}
+.startedForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 70px;
+    gap: 24px;
+}
+.getStartedTitle{
+    font-size: 55px;
+    line-height: 66.17px;
+    margin: 0;
+}
+.getStartedDescription{
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(132, 145, 160, 1);
+}
+
+.formExample{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.formExample label{
+    font-size: 16px;
+    line-height: 24px;
+}
+#name{
+    height: 30px;
+    background-color: rgba(24, 24, 35, 1);
+    border: none;
+}
+#email{
+    height: 30px;
+    background-color: rgba(24, 24, 35, 1);
+    border: none;
+}
+#message{
+    background-color: rgba(24, 24, 35, 1);
+    border: none;
+    resize: none;
+}
+#startSub{
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 24px 32px;
+    background-color: rgba(82, 33, 230, 1);
+}
+.footer{
+    padding: 80px 72px;
+    background-color: rgba(24, 24, 35, 1);
+}
+.footer-content{
+    display: flex;
+}
+.contact{
+    margin-right: auto;
+    text-align: center;
+}
+.footer-logo{
+    border-radius: 50%;
+}
+.contacts-link{
+    margin-top: 20px;
+}
+.contact-link{
+    margin-right: 10px;
+
+}
+.navigation-footer{
+    display: flex;
+    gap: 24px;
+}
+.items-nav{
+    width: 196px;
+    margin: 0;
+    padding:0;
+}
+.item-nav{
+    list-style: none;
+    height: 48px;
+    margin: 0;
+    padding:0;
+}
+.item-nav a{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.copyright{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(132, 145, 160, 1);
+}
+.list-item:hover{
+    border: 2px solid rgba(82, 33, 230, 1);
+    border-radius: 20%;
+}
+.item-nav a:hover{
+    opacity: 0.5;
+}
+.link:hover{
+    opacity: 0.5;
+}
+.skillItem:hover{
+    transform: scale(1.2);
+    border:  thick double orange;
+    transition: all 1s;
+}
+
+@media screen and (max-width: 768px){
+    .frame27{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skill{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skillBox-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .items-nav{
+        width: 154px;
+    }
+}
+@media screen and (max-width: 360px){
+    .workExpCards{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .frame10{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .skill{
+        grid-template-columns: 1fr;
+    }
+    .skillBox-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .frame36{
+        grid-template-columns: 1fr;
+    }
+    .startedForm{
+        grid-template-columns: 1fr;
+
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation-footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+    }
+}

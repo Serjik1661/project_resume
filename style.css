@@ -1,11 +1,13 @@
 body{
-    max-width: 1440px;
     margin: 0;
     padding: 0;
     background-color: #000000;
     color: white;
     font-size: 18px;
     line-height: 27px;
+}
+.page{
+    width: 80%;
     margin: 0 auto;
 }
 .header{
@@ -337,7 +339,7 @@ body{
     cursor: pointer;
 }
 .footer{
-    padding: 80px 72px;
+    padding: 80px 60px;
     background-color: rgba(24, 24, 35, 1);
 }
 .footer-content{
@@ -346,6 +348,7 @@ body{
 .contact{
     margin-right: auto;
     text-align: center;
+
 }
 .footer-logo{
     border-radius: 50%;
@@ -360,9 +363,10 @@ body{
 .navigation-footer{
     display: flex;
     gap: 24px;
+    margin-right: auto;
 }
 .items-nav{
-    width: 196px;
+
     margin: 0;
     padding:0;
 }
@@ -438,6 +442,9 @@ body{
     }
 }
 @media screen and (max-width: 360px){
+    .page{
+        width: 100%;
+    }
     .workExpCards{
         display: grid;
         grid-template-columns: 1fr;

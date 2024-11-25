@@ -17,7 +17,8 @@ body{
 }
 .header-logo{
     margin: auto 0;
-    margin-left: 72px;
+    margin-left: 60px;
+    margin-right: 12px;
 }
 .logo{
     border-radius: 50%;
@@ -37,17 +38,16 @@ body{
 }
 .list-item{
     padding: 34px 24px;
-    transition: all 1s;
+
 }
 .link{
     text-decoration: none;
     color: white;
-    transition: all 0.8s;
     font-size: 16px;
     line-height: 24px;
 }
 .active{
-    border: 2px solid rgba(82, 33, 230, 1);
+    border: 2px solid blueviolet;
     border-radius: 20%;
 }
 .hero{
@@ -59,8 +59,19 @@ body{
 
 }
 .hero-content{
+    position: relative;
     max-width: 400px;
     margin: auto auto;
+    animation-name: hero_animation;
+    animation-duration: 2s;
+}
+@keyframes hero_animation {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0;
+    }
 }
 .hero-title{
     font-size: 38px;
@@ -76,8 +87,21 @@ body{
     width: 300px;
     height: 300px;
     background-size: cover;
-    border-radius: 50%;
     border: thick double rgb(124, 107, 75);
+    animation-name: heroContainerImg_animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes heroContainerImg_animation {
+    from {
+        background-size: 20px;
+        border-radius: 50%;
+    }
+    to {
+        background-size: 230px;
+        border-radius: 0;
+    }
 }
 .workExpContent{
     max-width: 700px;
@@ -137,18 +161,17 @@ body{
     padding: clamp(1rem, 0.667rem + 11.11vw, 1.5rem) clamp(1rem, 0.808rem + 15.38vw, 1.5rem);
     color: black;
     background-color: bisque;
-    transition: all 0.5s;
 }
 .frame10:hover .frame10Content{
-
+    transition: all 0.5s;
     order: 0;
 }
 .frame10:hover .frame10ImgContent{
+    transition: all 0.5s;
     order: -1;
 }
 .frame10ImgContent{
     width: 100%;
-    transition: all 0.5s;
 }
 .frame10Title{
     font-size: 55px;
@@ -213,11 +236,28 @@ body{
     margin: 0;
 }
 .frame27Logo img{
+    position: relative;
     padding: 40px 0;
-    transition: transform 0.5s;
+    top: 0;
 }
-.frame27Logo img:hover{
-    transform: translateY(-30px);
+.frame27Logo:hover img{
+
+    animation-name: frame27Logo_img_animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+}
+@keyframes frame27Logo_img_animation {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: 40%;
+    }
+    50%{
+        top: -30%;
+    }
+
 }
 .contactInst{
     background-color: rgba(251, 228, 255, 1);
@@ -382,7 +422,7 @@ body{
     line-height: 24px;
     text-decoration: none;
     padding: 20px;
-    transition: all 1s;
+
 }
 .copyright{
     font-size: 16px;
@@ -390,23 +430,57 @@ body{
     color: rgba(132, 145, 160, 1);
 }
 .list-item:hover{
-    border: 2px solid rgba(82, 33, 230, 1);
+    border: 2px solid black;
     border-radius: 20%;
+    animation-name: list-item_animation;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes list-item_animation {
+    from {
+        border: 2px solid black;
+        border-radius: 20%;
+        border-bottom-color: yellow;
+        border-top-color: green;
+    }
+    50% {
+        border-left-color: blueviolet;
+        border-right-color: aqua;
+    }
+    75%{
+        border-color: black;
+    }
+    to{
+        border-color: blueviolet;
+    }
 }
 .item-nav:hover a{
     opacity: 0.3;
     border: 1px solid black;
 }
-.link:hover{
+.list-item:hover .link{
     opacity: 0.5;
+    transition: opacity 0.8s;
 }
 .skillItem:hover{
-    transform: scale(1.2);
+    background-color: #000000;
+    position:static;
+    width: 200px;
+
+    transform: scale(1.5);
     border:  thick double orange;
     transition: all 1s;
+    background-color: #000000;
 }
 .card:hover{
-    transform: scale(1.2);
+    background-color: #000000;
+    position:static;
+    width: 300px;
+    height: 400px;
+    transform: scale(1.4);
     border:  1px solid orange;
     transition: all 1s;
 }

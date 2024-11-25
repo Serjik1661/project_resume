@@ -13,7 +13,18 @@ body{
 .header{
     margin: 0 auto;
     display: flex;
-
+    position: relative;
+    animation-name: header_animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes header_animation {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0;
+    }
 }
 .header-logo{
     margin: auto 0;
@@ -25,7 +36,6 @@ body{
 }
 .navigation{
     margin-left: auto;
-
 }
 .navigation-list{
     padding: 0;
@@ -64,6 +74,7 @@ body{
     margin: auto auto;
     animation-name: hero_animation;
     animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 @keyframes hero_animation {
     from {
@@ -87,7 +98,8 @@ body{
     width: 300px;
     height: 300px;
     background-size: cover;
-    border: thick double rgb(124, 107, 75);
+    border: thick double rgb(80, 80, 192);
+    border-radius: 50%;
     animation-name: heroContainerImg_animation;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -96,20 +108,30 @@ body{
 @keyframes heroContainerImg_animation {
     from {
         background-size: 20px;
-        border-radius: 50%;
     }
     to {
         background-size: 230px;
-        border-radius: 0;
     }
 }
 .workExpContent{
+    position: relative;
     max-width: 700px;
     margin-bottom: 40px;
+    animation-name: workExp_animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 .workExp{
     border-top: 2px dashed;
     padding: 120px 72px;
+}
+@keyframes workExp_animation {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0;
+    }
 }
 .workExpDescription{
     color:rgba(132, 145, 160, 1);

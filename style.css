@@ -74,10 +74,10 @@ body{
 }
 .hero{
     display: flex;
-    padding: 120px 72px;
-    background-image: url("https://media1.giphy.com/media/10FwycrnAkpshW/giphy.gif");
+    padding: 200px 72px;
+    background-image: url("./img/torus.gif");
     background-size: cover;
-    background-position: 100% 30%;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
 
@@ -137,7 +137,7 @@ body{
 }
 .workExp{
     border-top: 2px dashed;
-    padding: 120px 72px;
+    padding: 20px 72px;
 }
 @keyframes workExp_animation {
     from {

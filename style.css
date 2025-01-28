@@ -533,6 +533,32 @@ body{
     font-size: 32px;
     color:orange;
 }
+.news{
+    padding: 80px 60px;
+    border: 10px dotted olive;
+    background-color: blueviolet;
+    color: white;
+}
+
+.newsWrapper{
+    padding: 10px;
+    border: 5px solid olive;
+}
+.newCat{
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid olive;
+    margin-bottom: 10px;
+    width: 600px;
+}
+.newCatTitle{
+    text-align: center;
+}
+.newsImga{
+    margin: 0 30%;
+    width: 60%;
+    height: 60%;
+}
 
 @media screen and (max-width: 768px){
     .hero{

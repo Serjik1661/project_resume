@@ -533,32 +533,54 @@ body{
     font-size: 32px;
     color:orange;
 }
-.news{
-    padding: 80px 60px;
-    border: 10px dotted olive;
-    background-color: blueviolet;
-    color: white;
+.news {
+    padding: 20px;
+    background-color: #000; /* Черный фон */
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #fff; /* Белый текст */
 }
 
-.newsWrapper{
-    padding: 10px;
-    border: 5px solid olive;
-}
-.newCat{
-    margin: 0 auto;
-    padding: 10px;
-    border: 5px solid olive;
-    margin-bottom: 10px;
-    width: 600px;
-}
-.newCatTitle{
+.news-title {
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff; /* Белый текст */
 }
-.newsImga{
-    margin: 0 30%;
-    width: 60%;
-    height: 60%;
+
+.news-item {
+    border: 1px solid #444; /* Темная граница */
+    border-radius: 6px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #222; /* Темный фон для карточек */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавная анимация */
 }
+
+.news-item:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Увеличенная тень */
+}
+
+.news-item-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #007bff; /* Цвет заголовка */
+}
+
+.news-item-date {
+    font-size: 0.9em;
+    color: #bbb; /* Светло-серый цвет для даты */
+    margin: 0 0 10px 0;
+}
+
+.news-item-description {
+    font-size: 1em;
+    color: #ddd; /* Светло-серый цвет для описания */
+}
+
+
 
 @media screen and (max-width: 768px){
     .hero{
